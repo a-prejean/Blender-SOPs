@@ -9,6 +9,10 @@ tags:
 
 # **Hotkeys**
 
+
+!!! DIVIDER ""
+
+
 ## **Viewport**
 
 | Hotkey | Description | Notes |
@@ -37,7 +41,9 @@ tags:
 | ++home++ | Frame All |  |
 | ++ctrl+b++ | Select Render Region | Click + Drag in Camera view to define Render Region |
 
----
+
+!!! DIVIDER ""
+
 
 ## **Selection**
 
@@ -49,7 +55,9 @@ tags:
 | ++2++ | Edge Select | In Edit Mode |
 | ++3++ | Face Select | In Edit Mode |
 
----
+
+!!! DIVIDER ""
+
 
 ## **Manipulation**
 
@@ -65,7 +73,9 @@ tags:
 | ++alt+p++ | Clear Parent Menu |  |
 | ++alt+s++ / ++g++ / ++r++ | Reset / Zero out Transform ( Scale / Location / Rotation ) |
 
----
+
+!!! DIVIDER ""
+
 
 ## **Animation**
 
@@ -75,7 +85,9 @@ tags:
 | ++t++ | Set Keyframe Interpolation | Selected Keyframe(s) in Graph Editor, Timeline, Dope Sheet |
 | ++r++ | Set Keyframe Type | Selected Keyframe(s) in Timeline |
 
----
+
+!!! DIVIDER ""
+
 
 ## **Node Editing**
 
