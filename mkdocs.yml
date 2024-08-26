@@ -68,22 +68,22 @@ markdown_extensions:
   - pymdownx.tilde
   - tables
 plugins:
-  # - glightbox:
-  #     touchNavigation: true
-  #     loop: false
-  #     effect: fade
-  #     slide_effect: slide
-  #     width: auto
-  #     height: auto
-  #     zoomable: true
-  #     draggable: false
-  #     skip_classes:
-  #       - custom-skip-class-name
-  #     auto_caption: false
-  #     caption_position: bottom
-  #     background: none
-  #     shadow: true
-  #     manual: false
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: fade
+      slide_effect: slide
+      width: auto
+      height: auto
+      zoomable: true
+      draggable: false
+      skip_classes:
+        - custom-skip-class-name
+      auto_caption: false
+      caption_position: bottom
+      background: none
+      shadow: true
+      manual: false
   - tags:
       tags_file: tags.md
   - search
