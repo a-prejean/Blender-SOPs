@@ -1,0 +1,130 @@
+site_name: Blender SOPs
+site_url: https://mydomain.org/mysite
+theme:
+  name: material
+  palette:
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate #myScheme
+      primary: black # blue grey
+      accent: indigo
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to light mode
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default #myScheme
+      primary: indigo #black, blue grey
+      accent: indigo
+      toggle:
+        icon: material/lightbulb 
+        name: Switch to dark mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - content.tooltips
+    # - toc.integrate
+    - toc.follow
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+  icon:
+    logo: material/home
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
+  favicon: assets/blender_icon_32x32.png
+extra_css:
+  - stylesheets/extra.css
+extra_javascript:
+  - javascripts/extra.js
+  - javascripts/tablesort.js
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - tables
+plugins:
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: fade
+      slide_effect: slide
+      width: auto
+      height: auto
+      zoomable: true
+      draggable: false
+      skip_classes:
+        - custom-skip-class-name
+      auto_caption: false
+      caption_position: bottom
+      background: none
+      shadow: true
+      manual: false
+  - tags:
+      tags_file: tags.md
+  - search
+  - offline
+extra:
+  homepage: index.html
+nav:
+  - Blender Overview:
+    - BlenderOverview/index.md
+    - BlenderOverview/Getting_Started.md
+    - BlenderOverview/Object_Manipulation.md
+    - BlenderOverview/Grouping_Parenting.md
+    - BlenderOverview/Master_Startup_File.md
+    - BlenderOverview/Product_Models.md
+    - BlenderOverview/Materials.md
+    - BlenderOverview/Cameras.md
+    - BlenderOverview/Lighting.md
+    - BlenderOverview/Render_Settings.md
+  - Materials Creation:
+    - Materials/index.md
+    - Materials/Working_with_Materials.md
+    - Materials/Node_Groups.md
+    - Materials/Metals.md
+    - Materials/Diamonds_Gemstones.md
+    - Materials/UV_Mapping.md
+    - Materials/Custom_Properties.md
+  - Render Workflow:
+    - Rendering/index.md
+    - Rendering/Scene_Composition.md
+    - Rendering/Lighting.md
+    - Rendering/Rendering.md
+    - Rendering/Compositing.md
+    - Rendering/Scene_Creation_Workflow.md
+  - Asset_Browser.md
+  - Notes_Resources.md
+  - Hotkeys.md
+  - tags.md
+  - Intro:
+    - ClassDemo/index.md
+    - ClassDemo/Slide01.md
+    - ClassDemo/Slide02.md
+    - ClassDemo/Slide03.md
+    - ClassDemo/Slide04.md
+    - ClassDemo/Slide05.md
