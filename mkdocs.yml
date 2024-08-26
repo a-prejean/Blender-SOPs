@@ -50,9 +50,11 @@ theme:
   favicon: assets/blender_icon_32x32.png
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/glightbox.css
 extra_javascript:
   - javascripts/extra.js
   - javascripts/tablesort.js
+  - javascripts/glightbox.js
 markdown_extensions:
   - attr_list
   - md_in_html
