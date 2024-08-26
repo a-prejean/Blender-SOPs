@@ -37,7 +37,9 @@ hide:
 !!! warning
     Renaming, Moving, or Deleting assets used in other .blend files will throw an error when re-opening that .blend file.
 
----
+
+!!! DIVIDER ""
+
 
 ## **Linked Assets**
 
@@ -53,7 +55,9 @@ hide:
 - Move all objects to **Collection**
 - Mark the **Collection** as asset, NOT just the object(s)
 
----
+
+!!! DIVIDER ""
+
 
 ## **Creating New Metal Material** (Example)
 
@@ -66,7 +70,9 @@ hide:
 1. Assign new Metal Material Asset to CAD geometry
 1. Save .blend file!
 
----
+
+!!! DIVIDER ""
+
 
 ## **Adding Models from Another .blend File**
 
@@ -79,7 +85,9 @@ hide:
 1. In Asset Browser window > Current File > Drag New Asset from “Unassigned” to proper “Catalog”
 1. Save .blend file!
 
----
+
+!!! DIVIDER ""
+
 
 ## **Use “Worlds” in Asset Browser for Render Setups**
 

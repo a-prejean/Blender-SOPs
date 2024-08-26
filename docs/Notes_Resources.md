@@ -10,7 +10,9 @@ hide:
 - Diamonds / Gemstones should NEVER be intersected by other geometry
 - Use Real-World Measurements (important for accurate dispersion and lighting effects)
 
----
+
+!!! DIVIDER ""
+
 
 ## **Links**
 
@@ -18,7 +20,9 @@ hide:
 
 [IOR / Index of Refraction List - Pixel and Poly](https://pixelandpoly.com/ior.html)
 
----
+
+!!! DIVIDER ""
+
 
 ## **Blender Documentation**
 
@@ -29,7 +33,9 @@ hide:
 [Node Groups - Blender Manual](https://docs.blender.org/manual/en/latest/interface/controls/nodes/groups.html)
 
 
----
+
+!!! DIVIDER ""
+
 
 ## **Learning Resources**
 
