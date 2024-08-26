@@ -91,6 +91,8 @@
     
       <link rel="stylesheet" href="../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="../stylesheets/glightbox.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -98,7 +100,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: none; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -1394,27 +1405,27 @@
 
 <h1 id="examples"><strong>Examples</strong></h1>
 <div class="grid">
-<p><img alt="Scene_001B" src="media/renders/Scene_001B.png" width="600" /></p>
-<p><img alt="Scene_001" src="media/renders/Scene_001.png" width="600" /></p>
-<p><img alt="Scene_002" src="media/renders/Scene_002.png" width="600" /></p>
-<p><img alt="Scene_002B" src="media/renders/Scene_002B.png" width="600" /></p>
-<p><img alt="Scene_003B" src="media/renders/Scene_003B.png" width="600" /></p>
-<p><img alt="Scene_003" src="media/renders/Scene_003.png" width="600" /></p>
-<p><img alt="Scene_004" src="media/renders/Scene_004.png" width="600" /></p>
-<p><img alt="Scene_004B" src="media/renders/Scene_004B.png" width="600" /></p>
+<p><a class="glightbox" href="media/renders/Scene_001B.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Scene_001B" src="media/renders/Scene_001B.png" width="600" /></a></p>
+<p><a class="glightbox" href="media/renders/Scene_001.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Scene_001" src="media/renders/Scene_001.png" width="600" /></a></p>
+<p><a class="glightbox" href="media/renders/Scene_002.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Scene_002" src="media/renders/Scene_002.png" width="600" /></a></p>
+<p><a class="glightbox" href="media/renders/Scene_002B.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Scene_002B" src="media/renders/Scene_002B.png" width="600" /></a></p>
+<p><a class="glightbox" href="media/renders/Scene_003B.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Scene_003B" src="media/renders/Scene_003B.png" width="600" /></a></p>
+<p><a class="glightbox" href="media/renders/Scene_003.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Scene_003" src="media/renders/Scene_003.png" width="600" /></a></p>
+<p><a class="glightbox" href="media/renders/Scene_004.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Scene_004" src="media/renders/Scene_004.png" width="600" /></a></p>
+<p><a class="glightbox" href="media/renders/Scene_004B.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Scene_004B" src="media/renders/Scene_004B.png" width="600" /></a></p>
 </div>
 <div class="admonition divider"></div>
 <div class="grid">
-<p><img alt="Scene_007" src="media/renders/Scene_007.png" width="450" /></p>
-<p><img alt="Scene_007-gif" src="media/video/Scene_007.gif" width="450" /></p>
+<p><a class="glightbox" href="media/renders/Scene_007.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Scene_007" src="media/renders/Scene_007.png" width="450" /></a></p>
+<p><a class="glightbox" href="media/video/Scene_007.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Scene_007-gif" src="media/video/Scene_007.gif" width="450" /></a></p>
 </div>
 <div class="admonition divider"></div>
 <h1 id="video-examples"><strong>Video Examples</strong></h1>
 <div class="grid">
-<p><img alt="Image_Title" src="media/video/Ring_Design_Glitch.gif" width="450" /></p>
-<p><img alt="Image_Title" src="media/video/Ring_Scan_Reveal.gif" width="450" /></p>
-<p><img alt="Image_Title" src="media/video/Ring_Flair.gif" width="450" /></p>
-<p><img alt="Image_Title" src="media/video/Plexus_Flower.gif" width="450" /></p>
+<p><a class="glightbox" href="media/video/Ring_Design_Glitch.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image_Title" src="media/video/Ring_Design_Glitch.gif" width="450" /></a></p>
+<p><a class="glightbox" href="media/video/Ring_Scan_Reveal.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image_Title" src="media/video/Ring_Scan_Reveal.gif" width="450" /></a></p>
+<p><a class="glightbox" href="media/video/Ring_Flair.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image_Title" src="media/video/Ring_Flair.gif" width="450" /></a></p>
+<p><a class="glightbox" href="media/video/Plexus_Flower.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image_Title" src="media/video/Plexus_Flower.gif" width="450" /></a></p>
 </div>
 <hr />
 
@@ -1509,6 +1520,10 @@
       
         <script src="../javascripts/tablesort.js"></script>
       
+        <script src="../javascripts/glightbox.js"></script>
+      
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": false, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

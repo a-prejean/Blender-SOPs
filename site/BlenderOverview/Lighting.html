@@ -93,6 +93,8 @@
     
       <link rel="stylesheet" href="../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="../stylesheets/glightbox.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -100,7 +102,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: none; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -1508,7 +1519,7 @@ It uses a simple HDRI environment for the base lighting and 3 light objects (Are
 <li>To see the lighting in your scene, select <strong><em>Viewport Shading &gt; Rendered</em></strong> at the top of the viewport window.</li>
 </ul>
 <figure>
-  <img alt="ViewportShadingRendered" src="../media/ViewportShadingRendered.png" width="720" />
+  <a class="glightbox" href="../media/ViewportShadingRendered.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ViewportShadingRendered" src="../media/ViewportShadingRendered.png" width="720" /></a>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1521,7 +1532,7 @@ It uses a simple HDRI environment for the base lighting and 3 light objects (Are
 <ul>
 <li>Adjust the HDRI lighting <strong>Strength</strong> in the <strong>World Properties</strong> panel, under the <strong>Surface</strong> tab.</li>
 </ul>
-<p><img _="," align="left" alt="WorldPropertiesSurface" src="../media/WorldPropertiesSurface.png" width="256" /></p>
+<p><a class="glightbox" href="../media/WorldPropertiesSurface.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img _="," align="left" alt="WorldPropertiesSurface" src="../media/WorldPropertiesSurface.png" width="256" /></a></p>
 </div>
 <h3 id="light-settings"><strong>Light Settings</strong></h3>
 <div class="grid">
@@ -1538,17 +1549,17 @@ It uses a simple HDRI environment for the base lighting and 3 light objects (Are
 <li>Beam Shape &gt; Spread: A value of 180 will result in a wide/soft light source, while a value of 0 will give a harsh/sharp edge:</li>
 </ul>
 <figure>
-  <img alt="AreaLightSoftSpread" src="../media/AreaLightSoftSpread.png" width="320" />
+  <a class="glightbox" href="../media/AreaLightSoftSpread.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="AreaLightSoftSpread" src="../media/AreaLightSoftSpread.png" width="320" /></a>
   <figcaption>Area light’s <strong>Spread</strong> set to 180</figcaption>
 </figure>
 <figure>
-  <img alt="AreaLightSharpSpread" src="../media/AreaLightSharpSpread.png" width="320" />
+  <a class="glightbox" href="../media/AreaLightSharpSpread.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="AreaLightSharpSpread" src="../media/AreaLightSharpSpread.png" width="320" /></a>
   <figcaption>Area light’s <strong>Spread</strong> set to 10</figcaption>
 </figure>
 </div>
 <div>
-<p><img _="," align="left" alt="AreaLight" src="../media/AreaLight.png" width="400" /></p>
-<p><img _="," align="left" alt="LightSettings" src="../media/LightSettings.png" width="400" /></p>
+<p><a class="glightbox" href="../media/AreaLight.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img _="," align="left" alt="AreaLight" src="../media/AreaLight.png" width="400" /></a></p>
+<p><a class="glightbox" href="../media/LightSettings.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img _="," align="left" alt="LightSettings" src="../media/LightSettings.png" width="400" /></a></p>
 </div>
 </div>
 <hr />
@@ -1559,7 +1570,7 @@ It uses a simple HDRI environment for the base lighting and 3 light objects (Are
 <li>You can then rotate the new light, change it’s color, intensity, etc.</li>
 </ul>
 <figure>
-  <img alt="DuplicateLight" src="../media/DuplicateLight.gif" width="400" />
+  <a class="glightbox" href="../media/DuplicateLight.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="DuplicateLight" src="../media/DuplicateLight.gif" width="400" /></a>
 </figure>
 <hr />
 
@@ -1663,6 +1674,10 @@ It uses a simple HDRI environment for the base lighting and 3 light objects (Are
       
         <script src="../javascripts/tablesort.js"></script>
       
+        <script src="../javascripts/glightbox.js"></script>
+      
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": false, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

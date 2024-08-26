@@ -93,6 +93,8 @@
     
       <link rel="stylesheet" href="../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="../stylesheets/glightbox.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -100,7 +102,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: none; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -1648,11 +1659,11 @@
 </ul>
 <div class="grid">
 <figure>
-  <img alt="False_Color_Render" src="media/False_Color_Render.png" width="400" />
+  <a class="glightbox" href="media/False_Color_Render.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="False_Color_Render" src="media/False_Color_Render.png" width="400" /></a>
   <figcaption>Final Render</figcaption>
 </figure>
 <figure>
-  <img alt="False_Color_Preview" src="media/False_Color_Preview.png" width="400" />
+  <a class="glightbox" href="media/False_Color_Preview.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="False_Color_Preview" src="media/False_Color_Preview.png" width="400" /></a>
   <figcaption>False Color preview</figcaption>
 </figure>
 </div>
@@ -1660,7 +1671,7 @@
 <h2 id="textured-area-lights-planes"><strong>Textured Area Lights / Planes</strong></h2>
 <div class="grid">
 <figure>
-  <img alt="Textured_Area_Light" src="media/Textured_Area_Light.png" width="400" />
+  <a class="glightbox" href="media/Textured_Area_Light.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Textured_Area_Light" src="media/Textured_Area_Light.png" width="400" /></a>
   <figcaption>Texture applied to Area Light</figcaption>
 </figure>
 <ul>
@@ -1851,6 +1862,10 @@
       
         <script src="../javascripts/tablesort.js"></script>
       
+        <script src="../javascripts/glightbox.js"></script>
+      
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": false, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

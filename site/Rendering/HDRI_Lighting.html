@@ -89,6 +89,8 @@
     
       <link rel="stylesheet" href="../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="../stylesheets/glightbox.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -96,7 +98,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: none; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -1435,17 +1446,17 @@
 </mark>
 <p>HDRI (High Dynamic Range Image) files can be used to light scenes as the only light source:</p>
 <figure>
-  <img alt="HDRI_Only_Lighting" src="media/HDRI_Only_Lighting.png" width="600" />
+  <a class="glightbox" href="media/HDRI_Only_Lighting.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="HDRI_Only_Lighting" src="media/HDRI_Only_Lighting.png" width="600" /></a>
   <figcaption>HDRI Lighting</figcaption>
 </figure>
 <p>or as a supplemental environment light:</p>
 <div class="grid">
 <figure>
-  <img alt="TPL_Key_Light_Only" src="media/TPL_Key_Light_Only.png" width="400" />
+  <a class="glightbox" href="media/TPL_Key_Light_Only.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="TPL_Key_Light_Only" src="media/TPL_Key_Light_Only.png" width="400" /></a>
   <figcaption>Key Light Only</figcaption>
 </figure>
 <figure>
-  <img alt="HDRI-1" src="media/HDRI_Key_Lighting.png" width="400" />
+  <a class="glightbox" href="media/HDRI_Key_Lighting.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="HDRI-1" src="media/HDRI_Key_Lighting.png" width="400" /></a>
   <figcaption>Key Light plus HDRI (with lower strength)</figcaption>
 </figure>
 </div>
@@ -1453,7 +1464,7 @@
 <h2 id="hdri-setup"><strong>HDRI Setup</strong></h2>
 <div class="grid">
 <figure>
-  <img alt="World_Shader" src="media/World_Shader.png" width="400" />
+  <a class="glightbox" href="media/World_Shader.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="World_Shader" src="media/World_Shader.png" width="400" /></a>
   <figcaption>Default World Shader</figcaption>
 </figure>
 <ul>
@@ -1464,7 +1475,7 @@
 <hr />
 <div class="grid">
 <figure>
-  <img alt="World_Settings_Surface" src="media/World_Settings_Surface.gif" width="300" />
+  <a class="glightbox" href="media/World_Settings_Surface.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="World_Settings_Surface" src="media/World_Settings_Surface.gif" width="300" /></a>
   <figcaption>Default World Shader</figcaption>
 </figure>
 <ul>
@@ -1475,7 +1486,7 @@
 </div>
 <div class="grid">
 <figure>
-  <img alt="World_Settings_HDRI_Image_Lighting_Setup" src="media/World_Settings_HDRI_Image_Lighting_Setup.png" width="300" />
+  <a class="glightbox" href="media/World_Settings_HDRI_Image_Lighting_Setup.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="World_Settings_HDRI_Image_Lighting_Setup" src="media/World_Settings_HDRI_Image_Lighting_Setup.png" width="300" /></a>
   <figcaption>HDRI_Image_Lighting_Setup</figcaption>
 </figure>
 <ul>
@@ -1587,6 +1598,10 @@
       
         <script src="../javascripts/tablesort.js"></script>
       
+        <script src="../javascripts/glightbox.js"></script>
+      
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": false, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

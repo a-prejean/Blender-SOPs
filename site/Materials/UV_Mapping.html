@@ -93,6 +93,8 @@
     
       <link rel="stylesheet" href="../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="../stylesheets/glightbox.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -100,7 +102,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: none; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -1558,7 +1569,7 @@
 <li>With Edges Selected, <span class="keys"><kbd class="key-right-button">Right Button</kbd></span> click, <strong><em>Mark Seam</em></strong></li>
 <li>In Edit Mode, with all Faces selected, select all UVs in UV Editor <span class="keys"><kbd class="key-a">A</kbd></span> , <span class="keys"><kbd class="key-right-button">Right Button</kbd></span> click, <strong><em>Unwrap</em></strong></li>
 </ol>
-<p><img _="," align="right" alt="UV_Project_from_View" src="../media/UV_Project_from_View.png" width="280" /></p>
+<p><a class="glightbox" href="../media/UV_Project_from_View.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img _="," align="right" alt="UV_Project_from_View" src="../media/UV_Project_from_View.png" width="280" /></a></p>
 </div>
 <hr />
 <h2 id="checking-uvs"><strong>Checking UVs</strong></h2>
@@ -1569,7 +1580,7 @@
 <li>Generated Type: UV Grid</li>
 <li>Or just apply <strong><em>UV_Checker</em></strong> material from the Asset Browser</li>
 </ul>
-<p><img _="," align="right" alt="UV_Checker_Material" src="../media/UV_Checker_Material.png" width="200" /></p>
+<p><a class="glightbox" href="../media/UV_Checker_Material.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img _="," align="right" alt="UV_Checker_Material" src="../media/UV_Checker_Material.png" width="200" /></a></p>
 </div>
 <h3 id="with-distortion-overlay"><strong>With Distortion Overlay</strong></h3>
 <div class="grid">
@@ -1577,7 +1588,7 @@
 <li>UV Editor &gt; Overlay Menu &gt; Display Stretch &gt; Area</li>
 <li>Should be mostly Blue (some Green okay)</li>
 </ul>
-<p><img _="," align="right" alt="UV_Distortion_Overlay" src="../media/UV_Distortion_Overlay.png" width="240" /></p>
+<p><a class="glightbox" href="../media/UV_Distortion_Overlay.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img _="," align="right" alt="UV_Distortion_Overlay" src="../media/UV_Distortion_Overlay.png" width="240" /></a></p>
 </div>
 <hr />
 <h2 id="uv-packing"><strong>UV Packing</strong></h2>
@@ -1592,7 +1603,7 @@
 </li>
 <li>UV Editor &gt; UV menu &gt; <strong><em>Pack Islands</em></strong></li>
 </ol>
-<p><img _="," align="right" alt="UV_Pack_Islands" src="../media/UV_Pack_Islands.png" width="280" /></p>
+<p><a class="glightbox" href="../media/UV_Pack_Islands.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img _="," align="right" alt="UV_Pack_Islands" src="../media/UV_Pack_Islands.png" width="280" /></a></p>
 </div>
 <hr />
 <h2 id="simple-texturing-for-props"><strong>Simple Texturing for Props</strong></h2>
@@ -1715,6 +1726,10 @@
       
         <script src="../javascripts/tablesort.js"></script>
       
+        <script src="../javascripts/glightbox.js"></script>
+      
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": false, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

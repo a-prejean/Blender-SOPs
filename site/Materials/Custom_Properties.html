@@ -93,6 +93,8 @@
     
       <link rel="stylesheet" href="../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="../stylesheets/glightbox.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -100,7 +102,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: none; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -1518,7 +1529,7 @@
 <li>Custom Properties &gt; <strong><em>New</em></strong></li>
 </ol>
 </div>
-<p><img _="," align="right" alt="Select_Custom_Properties" src="../media/Select_Custom_Properties.png" width="280" /></p>
+<p><a class="glightbox" href="../media/Select_Custom_Properties.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img _="," align="right" alt="Select_Custom_Properties" src="../media/Select_Custom_Properties.png" width="280" /></a></p>
 </div>
 <div class="grid">
 <div>
@@ -1531,7 +1542,7 @@
 <li><strong>Step</strong> : Specify the increment multiplier</li>
 </ul>
 </div>
-<p><img _="," align="right" alt="Custom_Property_Add_Color" src="../media/Custom_Property_Add_Color.png" width="320" /></p>
+<p><a class="glightbox" href="../media/Custom_Property_Add_Color.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img _="," align="right" alt="Custom_Property_Add_Color" src="../media/Custom_Property_Add_Color.png" width="320" /></a></p>
 </div>
 <hr />
 <h2 id="copy-selected-custom-properties"><strong>Copy Selected Custom Properties</strong></h2>
@@ -1561,11 +1572,11 @@
 </ul>
 <div class="grid">
 <figure>
-  <img alt="Custom_Property_Add_Attribute_Node" src="../media/Custom_Property_Add_Attribute_Node.png" width="282" />
+  <a class="glightbox" href="../media/Custom_Property_Add_Attribute_Node.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Custom_Property_Add_Attribute_Node" src="../media/Custom_Property_Add_Attribute_Node.png" width="282" /></a>
   <figcaption>Connect Color to Base Color</figcaption>
 </figure>
 <figure>
-  <img alt="Custom_Property_Mix_Color" src="../media/Custom_Property_Mix_Color.png" width="400" />
+  <a class="glightbox" href="../media/Custom_Property_Mix_Color.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Custom_Property_Mix_Color" src="../media/Custom_Property_Mix_Color.png" width="400" /></a>
   <figcaption>Or use Mix Color node to mix with Base Color</figcaption>
 </figure>
 </div>
@@ -1678,6 +1689,10 @@
       
         <script src="../javascripts/tablesort.js"></script>
       
+        <script src="../javascripts/glightbox.js"></script>
+      
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": false, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

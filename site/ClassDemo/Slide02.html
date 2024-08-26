@@ -93,6 +93,8 @@
     
       <link rel="stylesheet" href="../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="../stylesheets/glightbox.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -100,7 +102,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: none; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -1403,11 +1414,11 @@
 </div>
 <div class="grid">
 <figure>
-  <img _="," align="right" alt="Image_Title" src="media/examples/Mozart-1783.jpg" width="186" />
+  <a class="glightbox" href="media/examples/Mozart-1783.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img _="," align="right" alt="Image_Title" src="media/examples/Mozart-1783.jpg" width="186" /></a>
   <figcaption>Wolfgang Amadeus Mozart</figcaption>
 </figure>
 <figure>
-  <img _="," align="left" alt="Image_Title" src="media/examples/mozart.jpg" width="400" />
+  <a class="glightbox" href="media/examples/mozart.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img _="," align="left" alt="Image_Title" src="media/examples/mozart.jpg" width="400" /></a>
   <figcaption>Musikalisches Würfelspiel<br>(German for "musical dice game")</figcaption>
 </figure>
 </div>
@@ -1415,11 +1426,11 @@
 <h1 id="early-examples"><strong>Early Examples</strong></h1>
 <div class="grid">
 <figure>
-  <img alt="Image_Title" src="media/examples/JohnMaeda-AIInfinity.jpeg" width="600" />
+  <a class="glightbox" href="media/examples/JohnMaeda-AIInfinity.jpeg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image_Title" src="media/examples/JohnMaeda-AIInfinity.jpeg" width="600" /></a>
   <figcaption>AI Infinity - John Maeda, 1994</figcaption>
 </figure>
 <figure>
-  <img alt="Image_Title" src="media/examples/JaredTarbell-Substrate.jpg" width="600" />
+  <a class="glightbox" href="media/examples/JaredTarbell-Substrate.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image_Title" src="media/examples/JaredTarbell-Substrate.jpg" width="600" /></a>
   <figcaption>Substrate - Jared Tarbell, 2003</figcaption>
 </figure>
 </div>
@@ -1427,19 +1438,19 @@
 <h1 id="geometry-node-examples"><strong>Geometry Node Examples</strong></h1>
 <div class="grid">
 <figure>
-  <img alt="Image_Title" src="media/examples/Midge-blkid-01.jpg" width="600" />
+  <a class="glightbox" href="media/examples/Midge-blkid-01.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image_Title" src="media/examples/Midge-blkid-01.jpg" width="600" /></a>
   <figcaption>Credit: Midge "Mantissa" Sinnaeve</figcaption>
 </figure>
 <figure>
-  <img alt="Image_Title" src="media/examples/Midge-lattice.jpg" width="600" />
+  <a class="glightbox" href="media/examples/Midge-lattice.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image_Title" src="media/examples/Midge-lattice.jpg" width="600" /></a>
   <figcaption>Credit: Midge "Mantissa" Sinnaeve</figcaption>
 </figure>
 <figure>
-  <img alt="Image_Title" src="media/examples/Midge-micr-02-2ksm.jpg" width="600" />
+  <a class="glightbox" href="media/examples/Midge-micr-02-2ksm.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image_Title" src="media/examples/Midge-micr-02-2ksm.jpg" width="600" /></a>
   <figcaption>Credit: Midge "Mantissa" Sinnaeve</figcaption>
 </figure>
 <figure>
-  <img alt="Image_Title" src="media/examples/Midge-ptrn-003.jpg" width="600" />
+  <a class="glightbox" href="media/examples/Midge-ptrn-003.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image_Title" src="media/examples/Midge-ptrn-003.jpg" width="600" /></a>
   <figcaption>Credit: Midge "Mantissa" Sinnaeve</figcaption>
 </figure>
 </div>
@@ -1552,6 +1563,10 @@
       
         <script src="../javascripts/tablesort.js"></script>
       
+        <script src="../javascripts/glightbox.js"></script>
+      
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": false, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

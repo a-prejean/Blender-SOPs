@@ -93,6 +93,8 @@
     
       <link rel="stylesheet" href="../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="../stylesheets/glightbox.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -100,7 +102,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: none; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -1781,12 +1792,12 @@
 <div class="admonition divider"></div>
 <h2 id="composition-guides"><strong>Composition Guides</strong></h2>
 <figure>
-  <img alt="Composition_Overlays_Viewport" src="media/Composition_Overlays_Viewport.png" width="600" />
+  <a class="glightbox" href="media/Composition_Overlays_Viewport.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Composition_Overlays_Viewport" src="media/Composition_Overlays_Viewport.png" width="600" /></a>
   <figcaption>Composition Overlays in 3D Camera View</figcaption>
 </figure>
 <div class="grid">
 <figure>
-  <img alt="Composition_Overlays_Panel" src="media/Composition_Overlays_Panel.png" width="256" />
+  <a class="glightbox" href="media/Composition_Overlays_Panel.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Composition_Overlays_Panel" src="media/Composition_Overlays_Panel.png" width="256" /></a>
 </figure>
 <ol>
 <li>Select <strong><em>Camera</em></strong></li>
@@ -1799,17 +1810,17 @@
 <p>Color of Viewport Overlays can be changed in Edit &gt; Preferences</p>
 </div>
 <figure>
-  <img alt="View_Overlay_Color" src="media/View_Overlay_Color.png" width="480" />
+  <a class="glightbox" href="media/View_Overlay_Color.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="View_Overlay_Color" src="media/View_Overlay_Color.png" width="480" /></a>
 </figure>
 <div class="admonition divider"></div>
 <h2 id="catalog-template-overlays"><strong>Catalog Template Overlays</strong></h2>
 <figure>
-  <img alt="Camera_Background_Image_Viewport" src="media/Camera_Background_Image_Viewport.png" width="600" />
+  <a class="glightbox" href="media/Camera_Background_Image_Viewport.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Camera_Background_Image_Viewport" src="media/Camera_Background_Image_Viewport.png" width="600" /></a>
   <figcaption>Catalog Template Overlay in 3D Camera View</figcaption>
 </figure>
 <div class="grid">
 <figure>
-  <img alt="Camera_Background_Image_Panel" src="media/Camera_Background_Image_Panel.png" width="320" />
+  <a class="glightbox" href="media/Camera_Background_Image_Panel.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Camera_Background_Image_Panel" src="media/Camera_Background_Image_Panel.png" width="320" /></a>
 </figure>
 <ol>
 <li>Select <strong><em>Camera</em></strong></li>
@@ -1952,6 +1963,10 @@
       
         <script src="../javascripts/tablesort.js"></script>
       
+        <script src="../javascripts/glightbox.js"></script>
+      
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": false, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

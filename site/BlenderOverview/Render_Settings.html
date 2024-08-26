@@ -93,6 +93,8 @@
     
       <link rel="stylesheet" href="../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="../stylesheets/glightbox.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -100,7 +102,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: none; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -1592,7 +1603,7 @@
 <li>This is also where to define the file name.</li>
 </ul>
 </div>
-<p><img _="," align="right" alt="OutputProperties" src="../media/OutputProperties.png" width="320" /></p>
+<p><a class="glightbox" href="../media/OutputProperties.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img _="," align="right" alt="OutputProperties" src="../media/OutputProperties.png" width="320" /></a></p>
 </div>
 <hr />
 <h2 id="render-properties"><strong>Render Properties</strong></h2>
@@ -1614,7 +1625,7 @@
 </li>
 </ul>
 </div>
-<p><img _="," align="right" alt="RenderPropertiesSampling" src="../media/RenderPropertiesSampling.png" width="320" /></p>
+<p><a class="glightbox" href="../media/RenderPropertiesSampling.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img _="," align="right" alt="RenderPropertiesSampling" src="../media/RenderPropertiesSampling.png" width="320" /></a></p>
 </div>
 <div class="grid">
 <div>
@@ -1625,7 +1636,7 @@
 <li><strong>Caustics &gt; Filter Glossy</strong> : 0</li>
 </ul>
 </div>
-<p><img _="," align="right" alt="RenderPropertiesLightPaths" src="../media/RenderPropertiesLightPaths.png" width="300" /></p>
+<p><a class="glightbox" href="../media/RenderPropertiesLightPaths.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img _="," align="right" alt="RenderPropertiesLightPaths" src="../media/RenderPropertiesLightPaths.png" width="300" /></a></p>
 </div>
 <div class="grid">
 <div>
@@ -1640,7 +1651,7 @@
 <li><strong>Gamma</strong> : 1</li>
 </ul>
 </div>
-<p><img _="," align="right" alt="RenderPropertiesColor" src="../media/RenderPropertiesColor.png" width="300" /></p>
+<p><a class="glightbox" href="../media/RenderPropertiesColor.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img _="," align="right" alt="RenderPropertiesColor" src="../media/RenderPropertiesColor.png" width="300" /></a></p>
 </div>
 <hr />
 
@@ -1744,6 +1755,10 @@
       
         <script src="../javascripts/tablesort.js"></script>
       
+        <script src="../javascripts/glightbox.js"></script>
+      
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": false, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

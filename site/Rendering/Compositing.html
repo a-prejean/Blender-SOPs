@@ -93,6 +93,8 @@
     
       <link rel="stylesheet" href="../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="../stylesheets/glightbox.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -100,7 +102,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: none; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -1605,13 +1616,13 @@
 <p>Using Compositing Nodes to enhance renders so they’re closer to final right out of Blender</p>
 </mark>
 <figure>
-  <img alt="Compositing_Before_After-gif" src="media/Compositing_Before_After.gif" width="600" />
+  <a class="glightbox" href="media/Compositing_Before_After.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Compositing_Before_After-gif" src="media/Compositing_Before_After.gif" width="600" /></a>
 </figure>
 <hr />
 <h2 id="compositing-tab"><strong>Compositing Tab</strong></h2>
 <div class="grid">
 <figure>
-  <img alt="Compositing_View" src="media/Compositing_View.png" width="256" />
+  <a class="glightbox" href="media/Compositing_View.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Compositing_View" src="media/Compositing_View.png" width="256" /></a>
 </figure>
 <ul>
 <li>Enable <strong><em>Use Nodes</em></strong><ul>
@@ -1629,12 +1640,12 @@
 <p>Some of these are not always needed, and all of them are dependent on the scene.</p>
 </div>
 <figure>
-  <img alt="Photorealism_Post_Pro_Nodes" src="media/Photorealism_Post_Pro_Nodes.png" width="600" />
+  <a class="glightbox" href="media/Photorealism_Post_Pro_Nodes.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Photorealism_Post_Pro_Nodes" src="media/Photorealism_Post_Pro_Nodes.png" width="600" /></a>
   <figcaption>Node Tree in Compositor view</figcaption>
 </figure>
 <div class="grid">
 <figure>
-  <img alt="Photorealism_Post_Pro_NodeGroup" src="media/Photorealism_Post_Pro_NodeGroup.png" width="320" />
+  <a class="glightbox" href="media/Photorealism_Post_Pro_NodeGroup.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Photorealism_Post_Pro_NodeGroup" src="media/Photorealism_Post_Pro_NodeGroup.png" width="320" /></a>
   <figcaption>Photorealism_Post_Pro node group</figcaption>
 </figure>
 <ul>
@@ -1812,6 +1823,10 @@
       
         <script src="../javascripts/tablesort.js"></script>
       
+        <script src="../javascripts/glightbox.js"></script>
+      
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": false, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

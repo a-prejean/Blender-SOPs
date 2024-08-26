@@ -89,6 +89,8 @@
     
       <link rel="stylesheet" href="../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="../stylesheets/glightbox.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -96,7 +98,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: none; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -1455,14 +1466,14 @@
 <p>A simple method to achieve a quick studio lighting setup</p>
 </mark>
 <figure>
-  <img alt="TPL_All_Lights-gif" src="media/TPL_All_Lights.gif" width="600" />
+  <a class="glightbox" href="media/TPL_All_Lights.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="TPL_All_Lights-gif" src="media/TPL_All_Lights.gif" width="600" /></a>
 </figure>
 <hr />
 <h2 id="key-light"><strong>Key Light</strong></h2>
 <p><em>Main Light Source</em></p>
 <div class="grid">
 <figure>
-  <img _="," align="right" alt="TPL_Key_Light" src="media/TPL_Key_Light.png" width="400" />
+  <a class="glightbox" href="media/TPL_Key_Light.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img _="," align="right" alt="TPL_Key_Light" src="media/TPL_Key_Light.png" width="400" /></a>
   <figcaption>Key Light Selected in 3D Viewport</figcaption>
 </figure>
 <ul>
@@ -1478,11 +1489,11 @@
 </div>
 <div class="grid">
 <figure>
-  <img alt="TPL_Key_Light_Only" src="media/TPL_Key_Light_Only.png" width="400" />
+  <a class="glightbox" href="media/TPL_Key_Light_Only.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="TPL_Key_Light_Only" src="media/TPL_Key_Light_Only.png" width="400" /></a>
   <figcaption>Key Light Only</figcaption>
 </figure>
 <figure>
-  <img alt="TPL_All_Lights-1" src="media/TPL_All_Lights.png" width="400" />
+  <a class="glightbox" href="media/TPL_All_Lights.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="TPL_All_Lights-1" src="media/TPL_All_Lights.png" width="400" /></a>
   <figcaption>All Lights</figcaption>
 </figure>
 </div>
@@ -1490,7 +1501,7 @@
 <p class="admonition-title">Note</p>
 <p><div class="grid" markdown>
 <figure markdown="span">
-<img _="," align="right" alt="World_Settings_Pure_Black" src="media/World_Settings_Pure_Black.png" width="256" />
+<a class="glightbox" href="media/World_Settings_Pure_Black.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img _="," align="right" alt="World_Settings_Pure_Black" src="media/World_Settings_Pure_Black.png" width="256" /></a>
 <figcaption>World Properties</figcaption>
 </figure>
 <em>Make sure the environment is pure black, for deep reflections and rich blacks.</em>
@@ -1501,7 +1512,7 @@
 <p><em>Illuminates overly dark shadows</em></p>
 <div class="grid">
 <figure>
-  <img _="," align="right" alt="TPL_Fill_Light" src="media/TPL_Fill_Light.png" width="400" />
+  <a class="glightbox" href="media/TPL_Fill_Light.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img _="," align="right" alt="TPL_Fill_Light" src="media/TPL_Fill_Light.png" width="400" /></a>
   <figcaption>Fill Light Selected in 3D Viewport</figcaption>
 </figure>
 <ul>
@@ -1518,11 +1529,11 @@
 </div>
 <div class="grid">
 <figure>
-  <img alt="TPL_Fill_Light_Only" src="media/TPL_Fill_Light_Only.png" width="400" />
+  <a class="glightbox" href="media/TPL_Fill_Light_Only.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="TPL_Fill_Light_Only" src="media/TPL_Fill_Light_Only.png" width="400" /></a>
   <figcaption>Fill Light Only</figcaption>
 </figure>
 <figure>
-  <img alt="TPL_All_Lights-2" src="media/TPL_All_Lights.png" width="400" />
+  <a class="glightbox" href="media/TPL_All_Lights.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="TPL_All_Lights-2" src="media/TPL_All_Lights.png" width="400" /></a>
   <figcaption>All Lights</figcaption>
 </figure>
 </div>
@@ -1536,7 +1547,7 @@
 <p><em>Highlight edges to separate from background</em></p>
 <div class="grid">
 <figure>
-  <img _="," align="right" alt="TPL_Rim_Light" src="media/TPL_Rim_Light.png" width="400" />
+  <a class="glightbox" href="media/TPL_Rim_Light.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img _="," align="right" alt="TPL_Rim_Light" src="media/TPL_Rim_Light.png" width="400" /></a>
   <figcaption>Rim Light Selected in 3D Viewport</figcaption>
 </figure>
 <ul>
@@ -1547,11 +1558,11 @@
 </div>
 <div class="grid">
 <figure>
-  <img alt="TPL_Rim_Light_Only" src="media/TPL_Rim_Light_Only.png" width="400" />
+  <a class="glightbox" href="media/TPL_Rim_Light_Only.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="TPL_Rim_Light_Only" src="media/TPL_Rim_Light_Only.png" width="400" /></a>
   <figcaption>Rim Light Only</figcaption>
 </figure>
 <figure>
-  <img alt="TPL_All_Lights-3" src="media/TPL_All_Lights.png" width="400" />
+  <a class="glightbox" href="media/TPL_All_Lights.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="TPL_All_Lights-3" src="media/TPL_All_Lights.png" width="400" /></a>
   <figcaption>All Lights</figcaption>
 </figure>
 </div>
@@ -1560,7 +1571,7 @@
 <h3 id="reverse-key-lighting"><strong>Reverse Key Lighting</strong></h3>
 <p>Cinematic lighting technique that can help add depth/dimension to a scene.</p>
 <figure>
-  <img alt="Reverse_Key_Lighting" src="media/Reverse_Key_Lighting.png" width="600" />
+  <a class="glightbox" href="media/Reverse_Key_Lighting.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Reverse_Key_Lighting" src="media/Reverse_Key_Lighting.png" width="600" /></a>
   <figcaption>Reverse Key Light plus Fill Light</figcaption>
 </figure>
 <p><strong>Simple way to set up Reverse Key Lighting</strong></p>
@@ -1656,6 +1667,10 @@
       
         <script src="../javascripts/tablesort.js"></script>
       
+        <script src="../javascripts/glightbox.js"></script>
+      
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": false, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

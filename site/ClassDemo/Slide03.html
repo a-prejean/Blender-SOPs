@@ -93,6 +93,8 @@
     
       <link rel="stylesheet" href="../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="../stylesheets/glightbox.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -100,7 +102,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: none; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -1399,15 +1410,15 @@
 <p>We can use these methods to create 3D environments that can be used for product beauty shots, anytime a project calls for renders.</p>
 </mark>
 <figure>
-  <img alt="Similar_Aesthetic" src="media/renders/Scene_003.png" width="600" />
+  <a class="glightbox" href="media/renders/Scene_003.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Similar_Aesthetic" src="media/renders/Scene_003.png" width="600" /></a>
   <figcaption>Placing product on risers</figcaption>
 </figure>
 <figure>
-  <img alt="Impractical_Setup" src="media/renders/Scene_001B.png" width="600" />
+  <a class="glightbox" href="media/renders/Scene_001B.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Impractical_Setup" src="media/renders/Scene_001B.png" width="600" /></a>
   <figcaption>Impractical setup</figcaption>
 </figure>
 <figure>
-  <img alt="Impossible_Setup" src="media/renders/Scene_005.png" width="600" />
+  <a class="glightbox" href="media/renders/Scene_005.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Impossible_Setup" src="media/renders/Scene_005.png" width="600" /></a>
   <figcaption>Maybe?</figcaption>
 </figure>
 <hr />
@@ -1519,6 +1530,10 @@
       
         <script src="../javascripts/tablesort.js"></script>
       
+        <script src="../javascripts/glightbox.js"></script>
+      
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": false, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

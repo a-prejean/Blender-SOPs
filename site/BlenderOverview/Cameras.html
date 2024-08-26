@@ -93,6 +93,8 @@
     
       <link rel="stylesheet" href="../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="../stylesheets/glightbox.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -100,7 +102,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: none; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -1543,7 +1554,7 @@
 <li><strong>Ratio</strong> : <strong><em>2.0</em></strong></li>
 </ul>
 </div>
-<p><img _="," align="right" alt="CameraSettings" src="../media/CameraSettings.png" width="320" /></p>
+<p><a class="glightbox" href="../media/CameraSettings.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img _="," align="right" alt="CameraSettings" src="../media/CameraSettings.png" width="320" /></a></p>
 </div>
 <hr />
 <h2 id="positioning-the-camera"><strong>Positioning the Camera</strong></h2>
@@ -1562,7 +1573,7 @@
 <p>Open the Sidebar (menu) by pressing the <strong>N</strong> key and select the View Tab</p>
 </div>
 <figure>
-  <img alt="LockCamera" src="../media/LockCamera.png" width="256" />
+  <a class="glightbox" href="../media/LockCamera.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="LockCamera" src="../media/LockCamera.png" width="256" /></a>
   <figcaption>View tab</figcaption>
 </figure>
 <ul>
@@ -1576,16 +1587,16 @@
 </ul>
 <div class="grid">
 <figure>
-  <img alt="ViewportClipping" src="../media/ViewportClipping.gif" width="400" />
+  <a class="glightbox" href="../media/ViewportClipping.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ViewportClipping" src="../media/ViewportClipping.gif" width="400" /></a>
   <figcaption>“Clipped” geometry in the viewport</figcaption>
 </figure>
 <div>
 <figure>
-  <img alt="ViewportClip" src="../media/ViewportClip.png" width="256" />
+  <a class="glightbox" href="../media/ViewportClip.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ViewportClip" src="../media/ViewportClip.png" width="256" /></a>
   <figcaption>View tab</figcaption>
 </figure>
 <figure>
-  <img alt="CameraClip" src="../media/CameraClip.png" width="256" />
+  <a class="glightbox" href="../media/CameraClip.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="CameraClip" src="../media/CameraClip.png" width="256" /></a>
   <figcaption>Camera Settings</figcaption>
 </figure>
 </div>
@@ -1692,6 +1703,10 @@
       
         <script src="../javascripts/tablesort.js"></script>
       
+        <script src="../javascripts/glightbox.js"></script>
+      
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": false, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

@@ -93,6 +93,8 @@
     
       <link rel="stylesheet" href="../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="../stylesheets/glightbox.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -100,7 +102,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: none; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -1524,7 +1535,7 @@
 
 <h1 id="diamonds-gemstones"><strong>Diamonds &amp; Gemstones</strong></h1>
 <figure>
-  <img alt="C_Diamond" src="../media/C_Diamond.png" width="800" />
+  <a class="glightbox" href="../media/C_Diamond.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="C_Diamond" src="../media/C_Diamond.png" width="800" /></a>
   <figcaption><em><strong>C_Diamond</strong></em> material</figcaption>
 </figure>
 <div class="admonition note">
@@ -1534,7 +1545,7 @@
 <h2 id="c_gemstone_setup"><strong>C_Gemstone_Setup</strong></h2>
 <p>The original shader setup for most Gemstone materials created for catalog beauty shot renders.</p>
 <figure>
-  <img alt="C_Gemstone_Setup_MNG_detail" src="../media/C_Gemstone_Setup_MNG_detail.png" width="800" />
+  <a class="glightbox" href="../media/C_Gemstone_Setup_MNG_detail.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="C_Gemstone_Setup_MNG_detail" src="../media/C_Gemstone_Setup_MNG_detail.png" width="800" /></a>
   <figcaption>Contents of <em><strong>C_Gemstone_Setup_MNG</strong></em></figcaption>
 </figure>
 <ul>
@@ -1545,7 +1556,7 @@
 </li>
 </ul>
 <figure>
-  <img alt="C_Gemstone_Setup_MNG" src="../media/C_Gemstone_Setup_MNG.png" width="800" />
+  <a class="glightbox" href="../media/C_Gemstone_Setup_MNG.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="C_Gemstone_Setup_MNG" src="../media/C_Gemstone_Setup_MNG.png" width="800" /></a>
   <figcaption><em><strong>C_Gemstone_Setup_MNG</strong></em> Node Group using the <em><strong>Diamond_Attributes</strong></em> Node Group as input</figcaption>
 </figure>
 <hr />
@@ -1555,12 +1566,12 @@
 <li>Similar to C_Gemstone_Setup_MNG, this Node Group can be used as a starting point for most Gemstone types.</li>
 </ul>
 <figure>
-  <img alt="Image_Title" src="../media/JCF_Fancy_Glass.png" width="600" />
+  <a class="glightbox" href="../media/JCF_Fancy_Glass.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image_Title" src="../media/JCF_Fancy_Glass.png" width="600" /></a>
 </figure>
 <hr />
 <h3 id="recommended-render-settings-for-jcf-fancy-glass"><strong>Recommended Render Settings for JCF Fancy Glass</strong></h3>
 <figure>
-  <img alt="Image_Title" src="../media/JCF_Fancy_Glass_Render_Settings.png" width="600" />
+  <a class="glightbox" href="../media/JCF_Fancy_Glass_Render_Settings.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image_Title" src="../media/JCF_Fancy_Glass_Render_Settings.png" width="600" /></a>
 </figure>
 <ul>
 <li><strong>Max Samples</strong> : At least 1024</li>
@@ -1570,12 +1581,12 @@
 <hr />
 <h2 id="increasing-brightness"><strong>Increasing Brightness</strong></h2>
 <figure>
-  <img alt="Increasing_Brightness_Shader" src="../media/Increasing_Brightness_Shader.png" width="600" />
+  <a class="glightbox" href="../media/Increasing_Brightness_Shader.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Increasing_Brightness_Shader" src="../media/Increasing_Brightness_Shader.png" width="600" /></a>
   <figcaption>Added Material Nodes</figcaption>
 </figure>
 <div class="grid">
 <figure>
-  <img alt="Increasing_Brightness" src="../media/Increasing_Brightness.gif" width="400" />
+  <a class="glightbox" href="../media/Increasing_Brightness.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Increasing_Brightness" src="../media/Increasing_Brightness.gif" width="400" /></a>
 </figure>
 <ul>
 <li>Plug a shader's output into <em>BOTH</em> inputs of an <strong><em>Add Shader</em></strong></li>
@@ -1691,6 +1702,10 @@
       
         <script src="../javascripts/tablesort.js"></script>
       
+        <script src="../javascripts/glightbox.js"></script>
+      
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": false, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

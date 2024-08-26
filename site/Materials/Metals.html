@@ -93,6 +93,8 @@
     
       <link rel="stylesheet" href="../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="../stylesheets/glightbox.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -100,7 +102,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: none; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -1476,11 +1487,11 @@
 
 <h1 id="metals"><strong>Metals</strong></h1>
 <figure>
-  <img alt="C_Metal_14k_Yellow" src="../media/C_Metal_14k_Yellow.png" width="800" />
+  <a class="glightbox" href="../media/C_Metal_14k_Yellow.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="C_Metal_14k_Yellow" src="../media/C_Metal_14k_Yellow.png" width="800" /></a>
   <figcaption><em><strong>C_Metal_14k_Yellow</strong></em> material</figcaption>
 </figure>
 <figure>
-  <img alt="AssetBrowser_Gold_Materials" src="../media/AssetBrowser_Gold_Materials.png" width="800" />
+  <a class="glightbox" href="../media/AssetBrowser_Gold_Materials.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="AssetBrowser_Gold_Materials" src="../media/AssetBrowser_Gold_Materials.png" width="800" /></a>
   <figcaption>Metal Materials in Asset Browser Library</figcaption>
 </figure>
 <div class="admonition note">
@@ -1490,7 +1501,7 @@
 <h2 id="metal-14k-gold"><strong>Metal 14k Gold</strong></h2>
 <p>The original shader setup for all 14k Gold materials created for catalog beauty shot renders.</p>
 <figure>
-  <img alt="Metal_14k_Gold_MNG_Detail" src="../media/Metal_14k_Gold_MNG_Detail.png" width="800" />
+  <a class="glightbox" href="../media/Metal_14k_Gold_MNG_Detail.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Metal_14k_Gold_MNG_Detail" src="../media/Metal_14k_Gold_MNG_Detail.png" width="800" /></a>
   <figcaption>Contents of <em><strong>Metal_14k_Gold_MNG</strong></em></figcaption>
 </figure>
 <p>This Node Group is used in the following Materials:</p>
@@ -1500,14 +1511,14 @@
 <li>C_Metal_14k_Rose</li>
 </ul>
 <figure>
-  <img alt="Metal_14k_Gold_MNG" src="../media/Metal_14k_Gold_MNG.png" width="800" />
+  <a class="glightbox" href="../media/Metal_14k_Gold_MNG.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Metal_14k_Gold_MNG" src="../media/Metal_14k_Gold_MNG.png" width="800" /></a>
   <figcaption><em><strong>Metal_14k_Gold_MNG</strong></em> as used in <em><strong>C_Metal_14k_White</strong></em> material</figcaption>
 </figure>
 <hr />
 <h2 id="metal-shader"><strong>Metal Shader</strong></h2>
 <p>Alternative shader setup that can also be used for beauty shot renders.</p>
 <figure>
-  <img alt="Metal_Shader_MNG_Detail" src="../media/Metal_Shader_MNG_Detail.png" width="800" />
+  <a class="glightbox" href="../media/Metal_Shader_MNG_Detail.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Metal_Shader_MNG_Detail" src="../media/Metal_Shader_MNG_Detail.png" width="800" /></a>
   <figcaption>Contents of <em><strong>Metal_Shader_MNG</strong></em></figcaption>
 </figure>
 <p>This Node Group is used in the following Materials:</p>
@@ -1517,7 +1528,7 @@
 <li>Gold_Rose</li>
 </ul>
 <figure>
-  <img alt="Metal_Shader_MNG" src="../media/Metal_Shader_MNG.png" width="800" />
+  <a class="glightbox" href="../media/Metal_Shader_MNG.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Metal_Shader_MNG" src="../media/Metal_Shader_MNG.png" width="800" /></a>
   <figcaption><em><strong>Metal_Shader_MNG</strong></em> as used in <em><strong>Gold_Yellow</strong></em> material</figcaption>
 </figure>
 <hr />
@@ -1629,6 +1640,10 @@
       
         <script src="../javascripts/tablesort.js"></script>
       
+        <script src="../javascripts/glightbox.js"></script>
+      
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": false, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

@@ -93,6 +93,8 @@
     
       <link rel="stylesheet" href="../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="../stylesheets/glightbox.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -100,7 +102,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: none; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -1496,7 +1507,7 @@
 </ul>
 </li>
 </ul>
-<p><img _="," align="right" alt="Material Properties panel" src="../media/MaterialProperties.png" width="340" /></p>
+<p><a class="glightbox" href="../media/MaterialProperties.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img _="," align="right" alt="Material Properties panel" src="../media/MaterialProperties.png" width="340" /></a></p>
 </div>
 <hr />
 <h2 id="applying-materials"><strong>Applying Materials</strong></h2>
@@ -1507,7 +1518,7 @@
 <li>Click to browse Materials in the current .blend file</li>
 <li>Select Material to assign it to the current Material Slot</li>
 </ol>
-<p><img _="," align="right" alt="Select New Material" src="../media/SelectNewMaterial.gif" width="340" /></p>
+<p><a class="glightbox" href="../media/SelectNewMaterial.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img _="," align="right" alt="Select New Material" src="../media/SelectNewMaterial.gif" width="340" /></a></p>
 </div>
 <hr />
 <h2 id="linking-materials"><strong>Linking Materials</strong></h2>
@@ -1519,7 +1530,7 @@
 <li>Press <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-l">L</kbd></span></li>
 <li>Select <strong><em>Link Materials</em></strong> from menu</li>
 </ol>
-<p><img alt="Link Materials" src="../media/LinkMaterials.gif" width="360" /></p>
+<p><a class="glightbox" href="../media/LinkMaterials.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Link Materials" src="../media/LinkMaterials.gif" width="360" /></a></p>
 </div>
 <hr />
 
@@ -1630,6 +1641,10 @@
       
         <script src="../javascripts/tablesort.js"></script>
       
+        <script src="../javascripts/glightbox.js"></script>
+      
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": false, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>
