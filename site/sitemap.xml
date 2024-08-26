@@ -1,197 +1,197 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://mydomain.org/mysite/</loc>
+         <loc>https://mydomain.org/mysite/index.html</loc>
          <lastmod>2024-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/Asset_Browser/</loc>
+         <loc>https://mydomain.org/mysite/Asset_Browser.html</loc>
          <lastmod>2024-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/Hotkeys/</loc>
+         <loc>https://mydomain.org/mysite/Hotkeys.html</loc>
          <lastmod>2024-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/Notes_Resources/</loc>
+         <loc>https://mydomain.org/mysite/Notes_Resources.html</loc>
          <lastmod>2024-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/BlenderOverview/</loc>
+         <loc>https://mydomain.org/mysite/BlenderOverview/index.html</loc>
          <lastmod>2024-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/BlenderOverview/Cameras/</loc>
+         <loc>https://mydomain.org/mysite/BlenderOverview/Cameras.html</loc>
          <lastmod>2024-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/BlenderOverview/Getting_Started/</loc>
+         <loc>https://mydomain.org/mysite/BlenderOverview/Getting_Started.html</loc>
          <lastmod>2024-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/BlenderOverview/Grouping_Parenting/</loc>
+         <loc>https://mydomain.org/mysite/BlenderOverview/Grouping_Parenting.html</loc>
          <lastmod>2024-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/BlenderOverview/Lighting/</loc>
+         <loc>https://mydomain.org/mysite/BlenderOverview/Lighting.html</loc>
          <lastmod>2024-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/BlenderOverview/Master_Startup_File/</loc>
+         <loc>https://mydomain.org/mysite/BlenderOverview/Master_Startup_File.html</loc>
          <lastmod>2024-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/BlenderOverview/Materials/</loc>
+         <loc>https://mydomain.org/mysite/BlenderOverview/Materials.html</loc>
          <lastmod>2024-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/BlenderOverview/Object_Manipulation/</loc>
+         <loc>https://mydomain.org/mysite/BlenderOverview/Object_Manipulation.html</loc>
          <lastmod>2024-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/BlenderOverview/Product_Models/</loc>
+         <loc>https://mydomain.org/mysite/BlenderOverview/Product_Models.html</loc>
          <lastmod>2024-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/BlenderOverview/Render_Settings/</loc>
+         <loc>https://mydomain.org/mysite/BlenderOverview/Render_Settings.html</loc>
          <lastmod>2024-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/ClassDemo/</loc>
+         <loc>https://mydomain.org/mysite/ClassDemo/index.html</loc>
          <lastmod>2024-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/ClassDemo/Outline/</loc>
+         <loc>https://mydomain.org/mysite/ClassDemo/Outline.html</loc>
          <lastmod>2024-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/ClassDemo/Slide01/</loc>
+         <loc>https://mydomain.org/mysite/ClassDemo/Slide01.html</loc>
          <lastmod>2024-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/ClassDemo/Slide02/</loc>
+         <loc>https://mydomain.org/mysite/ClassDemo/Slide02.html</loc>
          <lastmod>2024-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/ClassDemo/Slide03/</loc>
+         <loc>https://mydomain.org/mysite/ClassDemo/Slide03.html</loc>
          <lastmod>2024-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/ClassDemo/Slide04/</loc>
+         <loc>https://mydomain.org/mysite/ClassDemo/Slide04.html</loc>
          <lastmod>2024-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/ClassDemo/Slide05/</loc>
+         <loc>https://mydomain.org/mysite/ClassDemo/Slide05.html</loc>
          <lastmod>2024-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/ClassDemo/Slide0X/</loc>
+         <loc>https://mydomain.org/mysite/ClassDemo/Slide0X.html</loc>
          <lastmod>2024-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/Materials/</loc>
+         <loc>https://mydomain.org/mysite/Materials/index.html</loc>
          <lastmod>2024-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/Materials/Custom_Properties/</loc>
+         <loc>https://mydomain.org/mysite/Materials/Custom_Properties.html</loc>
          <lastmod>2024-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/Materials/Diamonds_Gemstones/</loc>
+         <loc>https://mydomain.org/mysite/Materials/Diamonds_Gemstones.html</loc>
          <lastmod>2024-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/Materials/Metals/</loc>
+         <loc>https://mydomain.org/mysite/Materials/Metals.html</loc>
          <lastmod>2024-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/Materials/Node_Groups/</loc>
+         <loc>https://mydomain.org/mysite/Materials/Node_Groups.html</loc>
          <lastmod>2024-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/Materials/UV_Mapping/</loc>
+         <loc>https://mydomain.org/mysite/Materials/UV_Mapping.html</loc>
          <lastmod>2024-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/Materials/Working_with_Materials/</loc>
+         <loc>https://mydomain.org/mysite/Materials/Working_with_Materials.html</loc>
          <lastmod>2024-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/Rendering/</loc>
+         <loc>https://mydomain.org/mysite/Rendering/index.html</loc>
          <lastmod>2024-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/Rendering/Caustics/</loc>
+         <loc>https://mydomain.org/mysite/Rendering/Caustics.html</loc>
          <lastmod>2024-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/Rendering/Compositing/</loc>
+         <loc>https://mydomain.org/mysite/Rendering/Compositing.html</loc>
          <lastmod>2024-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/Rendering/HDRI_Lighting/</loc>
+         <loc>https://mydomain.org/mysite/Rendering/HDRI_Lighting.html</loc>
          <lastmod>2024-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/Rendering/Lighting/</loc>
+         <loc>https://mydomain.org/mysite/Rendering/Lighting.html</loc>
          <lastmod>2024-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/Rendering/Rendering/</loc>
+         <loc>https://mydomain.org/mysite/Rendering/Rendering.html</loc>
          <lastmod>2024-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/Rendering/Scene_Composition/</loc>
+         <loc>https://mydomain.org/mysite/Rendering/Scene_Composition.html</loc>
          <lastmod>2024-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/Rendering/Scene_Creation_Workflow/</loc>
+         <loc>https://mydomain.org/mysite/Rendering/Scene_Creation_Workflow.html</loc>
          <lastmod>2024-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/Rendering/Three_Point_Lighting/</loc>
+         <loc>https://mydomain.org/mysite/Rendering/Three_Point_Lighting.html</loc>
          <lastmod>2024-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/tags/</loc>
+         <loc>https://mydomain.org/mysite/tags.html</loc>
          <lastmod>2024-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>

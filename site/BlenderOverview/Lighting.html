@@ -8,11 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://mydomain.org/mysite/BlenderOverview/index.html">
+        <link rel="canonical" href="https://mydomain.org/mysite/BlenderOverview/Lighting.html">
       
       
+        <link rel="prev" href="Cameras.html">
       
-        <link rel="next" href="Getting_Started.html">
+      
+        <link rel="next" href="Render_Settings.html">
       
       
       <link rel="icon" href="../assets/blender_icon_32x32.png">
@@ -20,7 +22,7 @@
     
     
       
-        <title>Blender Overview SOP - Blender SOPs</title>
+        <title>Lighting - Blender SOPs</title>
       
     
     
@@ -117,7 +119,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#blender-overview-sop" class="md-skip">
+        <a href="#lighting" class="md-skip">
           Skip to content
         </a>
       
@@ -153,7 +155,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Blender Overview SOP
+              Lighting
             
           </span>
         </div>
@@ -406,8 +408,6 @@
           
             
               
-                
-              
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -481,7 +481,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="index.html" class="md-nav__link md-nav__link--active">
+            <a href="index.html" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -492,7 +492,7 @@
             </a>
             
               
-              <label class="md-nav__link md-nav__link--active" for="__nav_1" id="__nav_1_label" tabindex="">
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -658,10 +658,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="Lighting.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Lighting
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="Lighting.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -670,6 +690,68 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#simple-scene-lighting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simple Scene Lighting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Simple Scene Lighting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hdri-light-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      HDRI Light Settings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#light-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Light Settings
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#duplicating-lights" class="md-nav__link">
+    <span class="md-ellipsis">
+      Duplicating Lights
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1342,8 +1424,6 @@
             
             
               
-                
-              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -1363,108 +1443,42 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
+  <a href="#simple-scene-lighting" class="md-nav__link">
     <span class="md-ellipsis">
-      Getting Started
+      Simple Scene Lighting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Simple Scene Lighting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hdri-light-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      HDRI Light Settings
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#object-manipulation" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#light-settings" class="md-nav__link">
     <span class="md-ellipsis">
-      Object Manipulation
+      Light Settings
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#grouping-parenting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Grouping &amp; Parenting
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#master-startup-file" class="md-nav__link">
+  <a href="#duplicating-lights" class="md-nav__link">
     <span class="md-ellipsis">
-      Master Startup File
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#product-modelscad" class="md-nav__link">
-    <span class="md-ellipsis">
-      Product Models/CAD
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#materials" class="md-nav__link">
-    <span class="md-ellipsis">
-      Materials
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cameras" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cameras
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lighting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Lighting
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#render-settings" class="md-nav__link">
-    <span class="md-ellipsis">
-      Render Settings
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#asset-browser" class="md-nav__link">
-    <span class="md-ellipsis">
-      Asset Browser
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#notes-resources" class="md-nav__link">
-    <span class="md-ellipsis">
-      Notes &amp; Resources
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#hotkeys" class="md-nav__link">
-    <span class="md-ellipsis">
-      Hotkeys
+      Duplicating Lights
     </span>
   </a>
   
@@ -1485,59 +1499,68 @@
                   
 
 
-<h1 id="blender-overview-sop"><strong>Blender Overview</strong> SOP</h1>
+<h1 id="lighting"><strong>Lighting</strong></h1>
 <mark class="critic block">
-<p>Detailed overview of Blender, focused on how we use Blender internally.</p>
+<p>The <strong>Master</strong> .blend file already contains lighting that can be used as a starting point for most scenes.<br>
+It uses a simple HDRI environment for the base lighting and 3 light objects (Area, Fill, Key)</p>
 </mark>
-<h2 id="getting-started"><a href="Getting_Started.html"><strong>Getting Started</strong></a></h2>
 <ul>
-<li>Default scene and basic navigation</li>
+<li>To see the lighting in your scene, select <strong><em>Viewport Shading &gt; Rendered</em></strong> at the top of the viewport window.</li>
 </ul>
-<h2 id="object-manipulation"><a href="Object_Manipulation.html"><strong>Object Manipulation</strong></a></h2>
-<ul>
-<li>Basics of Transforming objects</li>
-</ul>
-<h2 id="grouping-parenting"><a href="Grouping_Parenting.html"><strong>Grouping &amp; Parenting</strong></a></h2>
-<ul>
-<li>Organizing objects with Collections and Parenting</li>
-</ul>
-<h2 id="master-startup-file"><a href="Master_Startup_File.html"><strong>Master Startup File</strong></a></h2>
-<ul>
-<li>Setting the <strong>Master</strong> .blend file as your default Startup File</li>
-</ul>
-<h2 id="product-modelscad"><a href="Product_Models.html"><strong>Product Models/CAD</strong></a></h2>
-<ul>
-<li>Importing and working with Product CAD files</li>
-</ul>
-<h2 id="materials"><a href="Materials.html"><strong>Materials</strong></a></h2>
-<ul>
-<li>Basics of the Material Properties panel, Applying and Linking materials</li>
-</ul>
-<h2 id="cameras"><a href="Cameras.html"><strong>Cameras</strong></a></h2>
-<ul>
-<li>Main Settings and Positioning</li>
-</ul>
-<h2 id="lighting"><a href="Lighting.html"><strong>Lighting</strong></a></h2>
-<ul>
-<li>Simple Scene Lighting and Settings</li>
-</ul>
-<h2 id="render-settings"><a href="Render_Settings.html"><strong>Render Settings</strong></a></h2>
-<ul>
-<li>Output, Format, Sampling, and Color Management</li>
-</ul>
+<figure>
+  <img alt="ViewportShadingRendered" src="../media/ViewportShadingRendered.png" width="720" />
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The Rendered display mode may slow down Blender considerably, depending on system hardware.</p>
+</div>
 <hr />
-<h2 id="asset-browser"><a href="../Asset_Browser.html"><strong>Asset Browser</strong></a></h2>
+<h2 id="simple-scene-lighting"><strong>Simple Scene Lighting</strong></h2>
+<h3 id="hdri-light-settings"><strong>HDRI Light Settings</strong></h3>
+<div class="grid">
 <ul>
-<li>How to setup and use the Asset Browser</li>
+<li>Adjust the HDRI lighting <strong>Strength</strong> in the <strong>World Properties</strong> panel, under the <strong>Surface</strong> tab.</li>
 </ul>
-<h2 id="notes-resources"><a href="../Notes_Resources.html"><strong>Notes &amp; Resources</strong></a></h2>
+<p><img _="," align="left" alt="WorldPropertiesSurface" src="../media/WorldPropertiesSurface.png" width="256" /></p>
+</div>
+<h3 id="light-settings"><strong>Light Settings</strong></h3>
+<div class="grid">
+<div>
 <ul>
-<li>Additional information to take a deeper dive into Blender</li>
+<li>Color: We mainly use White here, but this can be changed depending on the creative direction</li>
+<li>Power: This will need to be adjusted during initial scene setup, but should remain consistent throughout projects</li>
+<li>Shape: Setting an Area light to <strong>Rectangle</strong> allows for interesting lighting effects by elongating the light source</li>
+<li>Max Bounces: Typically leave at 1024</li>
+<li>Cast Shadow and Shadow Caustics may be enabled or disabled, depending on the scene.<ul>
+<li>i.e. If the scene doesn’t have any gemstones, Shadow Caustics may not be needed.</li>
 </ul>
-<h2 id="hotkeys"><a href="../Hotkeys.html"><strong>Hotkeys</strong></a></h2>
+</li>
+<li>Beam Shape &gt; Spread: A value of 180 will result in a wide/soft light source, while a value of 0 will give a harsh/sharp edge:</li>
+</ul>
+<figure>
+  <img alt="AreaLightSoftSpread" src="../media/AreaLightSoftSpread.png" width="320" />
+  <figcaption>Area light’s <strong>Spread</strong> set to 180</figcaption>
+</figure>
+<figure>
+  <img alt="AreaLightSharpSpread" src="../media/AreaLightSharpSpread.png" width="320" />
+  <figcaption>Area light’s <strong>Spread</strong> set to 10</figcaption>
+</figure>
+</div>
+<div>
+<p><img _="," align="left" alt="AreaLight" src="../media/AreaLight.png" width="400" /></p>
+<p><img _="," align="left" alt="LightSettings" src="../media/LightSettings.png" width="400" /></p>
+</div>
+</div>
+<hr />
+<h2 id="duplicating-lights"><strong>Duplicating Lights</strong></h2>
 <ul>
-<li>Commonly used Hotkeys / Keyboard Shortcuts</li>
+<li>Duplicating light objects is a quick way to light your scene.</li>
+<li>With a light object selected in the viewport, press <span class="keys"><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-d">D</kbd></span> and move the new light in your scene.</li>
+<li>You can then rotate the new light, change it’s color, intensity, etc.</li>
 </ul>
+<figure>
+  <img alt="DuplicateLight" src="../media/DuplicateLight.gif" width="400" />
+</figure>
 <hr />
 
 
@@ -1546,13 +1569,8 @@
 
 
 
-  
-  
 
 
-
-
-  
 
 
 
@@ -1576,19 +1594,33 @@
   
     
       
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
-      
-      <nav class="md-footer__inner md-grid" aria-label="Footer" hidden>
+          
+          <a href="Cameras.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Cameras">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Cameras
+              </div>
+            </div>
+          </a>
         
         
           
-          <a href="Getting_Started.html" class="md-footer__link md-footer__link--next" aria-label="Next: Getting Started with Blender">
+          <a href="Render_Settings.html" class="md-footer__link md-footer__link--next" aria-label="Next: Render Settings">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Getting Started with Blender
+                Render Settings
               </div>
             </div>
             <div class="md-footer__button md-icon">

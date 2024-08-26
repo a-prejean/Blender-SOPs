@@ -8,11 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://mydomain.org/mysite/BlenderOverview/index.html">
+        <link rel="canonical" href="https://mydomain.org/mysite/BlenderOverview/Cameras.html">
       
       
+        <link rel="prev" href="Materials.html">
       
-        <link rel="next" href="Getting_Started.html">
+      
+        <link rel="next" href="Lighting.html">
       
       
       <link rel="icon" href="../assets/blender_icon_32x32.png">
@@ -20,7 +22,7 @@
     
     
       
-        <title>Blender Overview SOP - Blender SOPs</title>
+        <title>Cameras - Blender SOPs</title>
       
     
     
@@ -117,7 +119,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#blender-overview-sop" class="md-skip">
+        <a href="#cameras" class="md-skip">
           Skip to content
         </a>
       
@@ -153,7 +155,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Blender Overview SOP
+              Cameras
             
           </span>
         </div>
@@ -406,8 +408,6 @@
           
             
               
-                
-              
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -481,7 +481,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="index.html" class="md-nav__link md-nav__link--active">
+            <a href="index.html" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -492,7 +492,7 @@
             </a>
             
               
-              <label class="md-nav__link md-nav__link--active" for="__nav_1" id="__nav_1_label" tabindex="">
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -637,10 +637,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="Cameras.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Cameras
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="Cameras.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -649,6 +669,77 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#main-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main Settings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Main Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lens" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lens
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#depth-of-field" class="md-nav__link">
+    <span class="md-ellipsis">
+      Depth of Field
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#positioning-the-camera" class="md-nav__link">
+    <span class="md-ellipsis">
+      Positioning the Camera
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#viewport-clipping" class="md-nav__link">
+    <span class="md-ellipsis">
+      Viewport Clipping
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1342,8 +1433,6 @@
             
             
               
-                
-              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -1363,108 +1452,51 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
+  <a href="#main-settings" class="md-nav__link">
     <span class="md-ellipsis">
-      Getting Started
+      Main Settings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Main Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lens" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lens
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#depth-of-field" class="md-nav__link">
+    <span class="md-ellipsis">
+      Depth of Field
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#positioning-the-camera" class="md-nav__link">
+    <span class="md-ellipsis">
+      Positioning the Camera
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#object-manipulation" class="md-nav__link">
+  <a href="#viewport-clipping" class="md-nav__link">
     <span class="md-ellipsis">
-      Object Manipulation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#grouping-parenting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Grouping &amp; Parenting
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#master-startup-file" class="md-nav__link">
-    <span class="md-ellipsis">
-      Master Startup File
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#product-modelscad" class="md-nav__link">
-    <span class="md-ellipsis">
-      Product Models/CAD
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#materials" class="md-nav__link">
-    <span class="md-ellipsis">
-      Materials
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cameras" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cameras
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lighting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Lighting
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#render-settings" class="md-nav__link">
-    <span class="md-ellipsis">
-      Render Settings
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#asset-browser" class="md-nav__link">
-    <span class="md-ellipsis">
-      Asset Browser
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#notes-resources" class="md-nav__link">
-    <span class="md-ellipsis">
-      Notes &amp; Resources
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#hotkeys" class="md-nav__link">
-    <span class="md-ellipsis">
-      Hotkeys
+      Viewport Clipping
     </span>
   </a>
   
@@ -1485,59 +1517,79 @@
                   
 
 
-<h1 id="blender-overview-sop"><strong>Blender Overview</strong> SOP</h1>
+<h1 id="cameras"><strong>Cameras</strong></h1>
 <mark class="critic block">
-<p>Detailed overview of Blender, focused on how we use Blender internally.</p>
+<p>The <strong>Master</strong> .blend file already contains a camera that can be used as a starting point for most scenes.</p>
 </mark>
-<h2 id="getting-started"><a href="Getting_Started.html"><strong>Getting Started</strong></a></h2>
+<h2 id="main-settings"><strong>Main Settings</strong></h2>
+<div class="grid">
+<div>
 <ul>
-<li>Default scene and basic navigation</li>
+<li>Select the camera and click on the camera icon in the Object Data Properties panel</li>
 </ul>
-<h2 id="object-manipulation"><a href="Object_Manipulation.html"><strong>Object Manipulation</strong></a></h2>
+<h3 id="lens"><strong>Lens</strong></h3>
 <ul>
-<li>Basics of Transforming objects</li>
+<li><strong>Focal Length</strong> : 100-200 mm (for most beauty shots)</li>
 </ul>
-<h2 id="grouping-parenting"><a href="Grouping_Parenting.html"><strong>Grouping &amp; Parenting</strong></a></h2>
+<h3 id="depth-of-field"><strong>Depth of Field</strong></h3>
 <ul>
-<li>Organizing objects with Collections and Parenting</li>
+<li><strong>Focus Object</strong> : set to “Empty” object that can be positioned as needed in viewport</li>
+<li><strong>F-Stop</strong> : <strong><em>Adjust as needed</em></strong> (if needed for scene)<ul>
+<li>Higher Values = Sharper Image</li>
 </ul>
-<h2 id="master-startup-file"><a href="Master_Startup_File.html"><strong>Master Startup File</strong></a></h2>
-<ul>
-<li>Setting the <strong>Master</strong> .blend file as your default Startup File</li>
+</li>
+<li><strong>Blades</strong> : <strong><em>8</em></strong></li>
+<li><strong>Rotation</strong> : <strong><em>0</em></strong></li>
+<li><strong>Ratio</strong> : <strong><em>2.0</em></strong></li>
 </ul>
-<h2 id="product-modelscad"><a href="Product_Models.html"><strong>Product Models/CAD</strong></a></h2>
+</div>
+<p><img _="," align="right" alt="CameraSettings" src="../media/CameraSettings.png" width="320" /></p>
+</div>
+<hr />
+<h2 id="positioning-the-camera"><strong>Positioning the Camera</strong></h2>
 <ul>
-<li>Importing and working with Product CAD files</li>
+<li>Press <span class="keys"><kbd class="key-0">0</kbd></span> while in the viewport to toggle the view to look through the active camera.</li>
+<li>Change the camera view using basic viewport navigation<ul>
+<li><strong>Rotate Viewport</strong> - Click &amp; Drag with <span class="keys"><kbd class="key-middle-button">Middle Button</kbd></span></li>
+<li><strong>Track / Pan Viewport</strong> - While holding <span class="keys"><kbd class="key-shift">Shift</kbd></span> key, Click &amp; Drag with <span class="keys"><kbd class="key-middle-button">Middle Button</kbd></span></li>
+<li><strong>Zoom Viewport</strong> - While holding <span class="keys"><kbd class="key-control">Ctrl</kbd></span> key, Click &amp; Drag with <span class="keys"><kbd class="key-middle-button">Middle Button</kbd></span></li>
 </ul>
-<h2 id="materials"><a href="Materials.html"><strong>Materials</strong></a></h2>
-<ul>
-<li>Basics of the Material Properties panel, Applying and Linking materials</li>
+</li>
 </ul>
-<h2 id="cameras"><a href="Cameras.html"><strong>Cameras</strong></a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Must Enable “Camera to View” in the View tab.</p>
+<p>Open the Sidebar (menu) by pressing the <strong>N</strong> key and select the View Tab</p>
+</div>
+<figure>
+  <img alt="LockCamera" src="../media/LockCamera.png" width="256" />
+  <figcaption>View tab</figcaption>
+</figure>
 <ul>
-<li>Main Settings and Positioning</li>
-</ul>
-<h2 id="lighting"><a href="Lighting.html"><strong>Lighting</strong></a></h2>
-<ul>
-<li>Simple Scene Lighting and Settings</li>
-</ul>
-<h2 id="render-settings"><a href="Render_Settings.html"><strong>Render Settings</strong></a></h2>
-<ul>
-<li>Output, Format, Sampling, and Color Management</li>
+<li>Select an object to pivot the camera’s view around that object (optional)</li>
 </ul>
 <hr />
-<h2 id="asset-browser"><a href="../Asset_Browser.html"><strong>Asset Browser</strong></a></h2>
+<h2 id="viewport-clipping"><strong>Viewport Clipping</strong></h2>
 <ul>
-<li>How to setup and use the Asset Browser</li>
+<li>Sometimes when zooming too close (or too far) to an object, the geometry gets <strong><em>clipped</em></strong>.</li>
+<li>Fix this by adjusting <strong>Clip Start</strong> and <strong>End</strong> in the <strong>View</strong> tab or <strong>Camera Settings</strong>.</li>
 </ul>
-<h2 id="notes-resources"><a href="../Notes_Resources.html"><strong>Notes &amp; Resources</strong></a></h2>
-<ul>
-<li>Additional information to take a deeper dive into Blender</li>
-</ul>
-<h2 id="hotkeys"><a href="../Hotkeys.html"><strong>Hotkeys</strong></a></h2>
-<ul>
-<li>Commonly used Hotkeys / Keyboard Shortcuts</li>
-</ul>
+<div class="grid">
+<figure>
+  <img alt="ViewportClipping" src="../media/ViewportClipping.gif" width="400" />
+  <figcaption>“Clipped” geometry in the viewport</figcaption>
+</figure>
+<div>
+<figure>
+  <img alt="ViewportClip" src="../media/ViewportClip.png" width="256" />
+  <figcaption>View tab</figcaption>
+</figure>
+<figure>
+  <img alt="CameraClip" src="../media/CameraClip.png" width="256" />
+  <figcaption>Camera Settings</figcaption>
+</figure>
+</div>
+</div>
 <hr />
 
 
@@ -1546,13 +1598,8 @@
 
 
 
-  
-  
 
 
-
-
-  
 
 
 
@@ -1576,19 +1623,33 @@
   
     
       
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
-      
-      <nav class="md-footer__inner md-grid" aria-label="Footer" hidden>
+          
+          <a href="Materials.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Materials">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Materials
+              </div>
+            </div>
+          </a>
         
         
           
-          <a href="Getting_Started.html" class="md-footer__link md-footer__link--next" aria-label="Next: Getting Started with Blender">
+          <a href="Lighting.html" class="md-footer__link md-footer__link--next" aria-label="Next: Lighting">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Getting Started with Blender
+                Lighting
               </div>
             </div>
             <div class="md-footer__button md-icon">
