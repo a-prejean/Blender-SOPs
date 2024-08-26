@@ -87,7 +87,7 @@ plugins:
   - tags:
       tags_file: tags.md
   - search
-  # - offline
+  - offline
 extra:
   homepage: index.html
 nav:
