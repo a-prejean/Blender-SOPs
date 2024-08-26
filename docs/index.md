@@ -7,7 +7,7 @@ hide:
 
 {==
 
-Use Tab Navigation at top of page to get started.
+Use ***Tab Navigation*** or ***Search Box*** at top of page to get started.
 
 ==}
 
