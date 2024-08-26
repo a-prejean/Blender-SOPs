@@ -46,7 +46,9 @@ tags:
 
 </div>
 
----
+
+!!! DIVIDER ""
+
 
 ## **Copy Selected Custom Properties**
 
@@ -63,7 +65,9 @@ Copy to any object/instance that needs to share materials
 !!! note
     Make sure objects have same material(s) applied
 
----
+
+!!! DIVIDER ""
+
 
 ## **Add Attribute Node in Material**
 

@@ -36,7 +36,9 @@ The original shader setup for most Gemstone materials created for catalog beauty
   <figcaption><em><strong>C_Gemstone_Setup_MNG</strong></em> Node Group using the <em><strong>Diamond_Attributes</strong></em> Node Group as input</figcaption>
 </figure>
 
----
+
+!!! DIVIDER ""
+
 
 ## **JCF Fancy Glass**
 Alternative shader setup that can also be used for beauty shot renders.
@@ -60,7 +62,8 @@ Alternative shader setup that can also be used for beauty shot renders.
 - **Indirect Light** : 250 for low samples, up to around 1000 for high samples
 
 
----
+!!! DIVIDER ""
+
 
 ## **Increasing Brightness**
 

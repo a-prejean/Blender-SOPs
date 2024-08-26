@@ -26,7 +26,9 @@ tags:
 
 </div>
 
----
+
+!!! DIVIDER ""
+
 
 ## **Checking UVs**
 
@@ -55,7 +57,9 @@ tags:
 
 </div>
 
----
+
+!!! DIVIDER ""
+
 
 ## **UV Packing**
 
@@ -73,7 +77,9 @@ tags:
 
 </div>
 
----
+
+!!! DIVIDER ""
+
 
 ## **Simple Texturing for Props**
 

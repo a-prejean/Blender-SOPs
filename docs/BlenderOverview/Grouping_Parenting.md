@@ -12,7 +12,9 @@ It is good practice to organize objects in the scene by **Collections**
 2. Press the ++m++ key
 3. Move selected object(s) into an existing **Collection** or create a NEW **Collection**
 
----
+
+!!! DIVIDER ""
+
 
 ## **Parenting Objects**
 

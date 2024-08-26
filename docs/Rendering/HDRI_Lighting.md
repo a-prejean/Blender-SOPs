@@ -39,7 +39,8 @@ or as a supplemental environment light:
 </div>
 
 
----
+!!! DIVIDER ""
+
 
 ## **HDRI Setup**
 
@@ -109,7 +110,8 @@ These **Free Addons** can also be used to quickly setup and manage HDRI lighting
     - Sun Lamp
 
 
----
+!!! DIVIDER ""
+
 
 ## **HDRI Sources**
 These are some nice HDRI files to get started with (all found at [Poly Haven](https://polyhaven.com/hdris)):

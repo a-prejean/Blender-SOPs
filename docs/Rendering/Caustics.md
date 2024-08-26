@@ -51,7 +51,8 @@ Blender doesn't produce the best caustics natively.  Some tricks / hacks can be 
 </div>
 
 
----
+!!! DIVIDER ""
+
 
 ### **Render Settings for Caustics**
 
@@ -75,12 +76,11 @@ Blender doesn't produce the best caustics natively.  Some tricks / hacks can be 
 - **Width** : ***1.0***
 
 
----
+!!! DIVIDER ""
+
 
 !!! note
     The traditional method of creating caustics may not work properly with HDRI or Emissive Lights, only direct light sources, whereas the shader method should work with all light sources.
-
----
 
 
 ## **Traditional Caustics Setup**
@@ -115,7 +115,8 @@ Setting up the scene the standard way is a bit more complicated.
         - Enable ***Shadow Caustics***
 
 
----
+!!! DIVIDER ""
+
 
 ## Lights
 **In General:**

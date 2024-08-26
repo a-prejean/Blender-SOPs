@@ -20,7 +20,8 @@ Basic process for setting the final render resolution and export settings
 - This is done so that the retouchers have more fine control when they are making adjustments to the images.
 
 
----
+!!! DIVIDER ""
+
 
 ## **Final Export Resolution**
 
@@ -68,7 +69,8 @@ Basic process for setting the final render resolution and export settings
 - For print images not used in catalogs or that are otherwise not one of the above-mentioned sizes, ask the lead designer on the project how big the images will be, then use the 300 DPI rule to determine the pixel resolution.
 
 
----
+!!! DIVIDER ""
+
 
 ## **Batch Rendering and Exporting**
 - When rendering at higher resolutions, render times become increasingly long, making it impractical to render multiple sets of images during the workday.
@@ -111,7 +113,8 @@ Basic process for setting the final render resolution and export settings
     - It is best to simply do whichever files are ready at the end of each day, this way the retouchers are not waiting on files.
 
 
----
+!!! DIVIDER ""
+
 
 ## **What To Do With Final Rendered Images**
 - Once you have the final rendered images, you need to make them available to the retouchers.
@@ -121,7 +124,8 @@ Basic process for setting the final render resolution and export settings
 - At this point you can message the designated retoucher for the project and let them know that the images are ready.
 
 
----
+!!! DIVIDER ""
+
 
 ## [**Render Settings**](../BlenderOverview/Render_Settings.html)
 - Output, Format, Sampling, and Color Management (From [***Blender Overview***](../BlenderOverview/index.md))

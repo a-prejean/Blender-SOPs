@@ -31,7 +31,8 @@ Render and Output settings are already set in the **Master** .blend file, and th
 </div>
 
 
----
+!!! DIVIDER ""
+
 
 ## **Render Properties**
 - We primarily use the Cycles render engine for beauty shots.

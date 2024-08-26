@@ -20,7 +20,8 @@ A simple method to achieve a quick studio lighting setup
 </figure>
 
 
----
+!!! DIVIDER ""
+
 
 ## **Key Light**
 
@@ -69,7 +70,8 @@ A simple method to achieve a quick studio lighting setup
     </div>
 
 
----
+!!! DIVIDER ""
+
 
 ## **Fill Light**
 
@@ -112,7 +114,8 @@ A simple method to achieve a quick studio lighting setup
     <br>Sizing can be similar to a light, but a plane might need to be placed closer to object.
 
 
----
+!!! DIVIDER ""
+
 
 ## **Rim Light**
 
@@ -147,9 +150,11 @@ A simple method to achieve a quick studio lighting setup
 </div>
 
 
----
+!!! DIVIDER ""
+
 
 ## **Additional Tips**
+
 
 ### **Reverse Key Lighting**
 
@@ -170,6 +175,7 @@ Cinematic lighting technique that can help add depth/dimension to a scene.
 
 ---
 
+
 ### **Shadows**
 
 **Softer Shadows with Area Lights**
@@ -184,6 +190,7 @@ Cinematic lighting technique that can help add depth/dimension to a scene.
 
 
 ---
+
 
 ### **Inverse Square Law**
 - When moving lights, if a light's distance from an object is doubled, the amount of percieved light is reduced to about 25%.  

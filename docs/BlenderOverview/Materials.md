@@ -25,7 +25,9 @@ Most of the materials needed for our purposes should already exist in the **Mast
 
 </div>
 
----
+
+!!! DIVIDER ""
+
 
 ## **Applying Materials**
 
@@ -42,7 +44,9 @@ In the Material Properties panel…
 
 </div>
 
----
+
+!!! DIVIDER ""
+
 
 ## **Linking Materials**
 

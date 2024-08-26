@@ -21,7 +21,8 @@ Using Compositing Nodes to enhance renders so they’re closer to final right ou
 </figure>
 
 
----
+!!! DIVIDER ""
+
 
 ## **Compositing Tab**
 
@@ -39,8 +40,8 @@ Using Compositing Nodes to enhance renders so they’re closer to final right ou
 </div>
 
 
+!!! DIVIDER ""
 
----
 
 ## **Compositing Nodes**
 

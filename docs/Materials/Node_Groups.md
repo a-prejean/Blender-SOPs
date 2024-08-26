@@ -35,7 +35,9 @@ Currently using the following Node Groups to define global colors:
 - Metal_Colors
 - Background_Colors
 
----
+
+!!! DIVIDER ""
+
 
 ## **Naming Convention Suffixes**
 In Blender, Node Groups can be used in Materials, Compositing, and Geometry Nodes.

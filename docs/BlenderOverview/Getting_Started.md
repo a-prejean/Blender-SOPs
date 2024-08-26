@@ -18,7 +18,8 @@
 </div>
 
 
----
+!!! DIVIDER ""
+
 
 ## **Default Scene**
 
@@ -31,7 +32,8 @@
 </figure>
 
 
----
+!!! DIVIDER ""
+
 
 ## **Basic Navigation**
 
@@ -75,7 +77,8 @@ Click & Drag with ++middle-button++
     Viewport navigation is a little different in Blender compared to other 3D applications.
 
 
----
+!!! DIVIDER ""
+
 
 ## **Selecting Objects**
 
@@ -106,7 +109,8 @@ Click & Drag with ++middle-button++
 </div>
 
 
----
+!!! DIVIDER ""
+
 
 ## **Adding & Deleting Objects**
 

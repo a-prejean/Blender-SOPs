@@ -19,7 +19,9 @@ tags:
 
 </div>
 
----
+
+!!! DIVIDER ""
+
 
 ## **Applying Materials**
 
@@ -36,7 +38,9 @@ In the Material Properties panel…
 
 </div>
 
----
+
+!!! DIVIDER ""
+
 
 ## **Linking Materials**
 

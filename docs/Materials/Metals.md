@@ -43,7 +43,9 @@ This Node Group is used in the following Materials:
   <figcaption><em><strong>Metal_14k_Gold_MNG</strong></em> as used in <em><strong>C_Metal_14k_White</strong></em> material</figcaption>
 </figure>
 
----
+
+!!! DIVIDER ""
+
 
 ## **Metal Shader**
 Alternative shader setup that can also be used for beauty shot renders.

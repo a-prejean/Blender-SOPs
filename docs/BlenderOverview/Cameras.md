@@ -32,7 +32,8 @@ The **Master** .blend file already contains a camera that can be used as a start
 </div>
 
 
----
+!!! DIVIDER ""
+
 
 ## **Positioning the Camera**
 
@@ -55,7 +56,8 @@ The **Master** .blend file already contains a camera that can be used as a start
 - Select an object to pivot the camera’s view around that object (optional)
 
 
----
+!!! DIVIDER ""
+
 
 ## **Viewport Clipping**
 

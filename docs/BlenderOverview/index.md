@@ -47,7 +47,8 @@ Detailed overview of Blender, focused on how we use Blender internally.
 - Output, Format, Sampling, and Color Management
 
 
----
+!!! DIVIDER ""
+
 
 ## [**Asset Browser**](../Asset_Browser.html)
 - How to setup and use the Asset Browser

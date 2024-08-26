@@ -121,10 +121,10 @@ nav:
   - Notes_Resources.md
   - Hotkeys.md
   - tags.md
-  - Intro:
-    - ClassDemo/index.md
-    - ClassDemo/Slide01.md
-    - ClassDemo/Slide02.md
-    - ClassDemo/Slide03.md
-    - ClassDemo/Slide04.md
-    - ClassDemo/Slide05.md
+  # - Intro:
+  #   - ClassDemo/index.md
+  #   - ClassDemo/Slide01.md
+  #   - ClassDemo/Slide02.md
+  #   - ClassDemo/Slide03.md
+  #   - ClassDemo/Slide04.md
+  #   - ClassDemo/Slide05.md

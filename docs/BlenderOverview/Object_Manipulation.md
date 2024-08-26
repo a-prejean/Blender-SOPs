@@ -9,7 +9,8 @@
     Transforms are typically oriented according to current viewport
 
 
----
+!!! DIVIDER ""
+
 
 ## **Transform an object along a specific axis**
 
@@ -18,7 +19,9 @@
 3. Press ++z++ , ++x++ , or ++y++ keys to select axis
 4. Type a number to set a specific value (optional)
 
----
+
+!!! DIVIDER ""
+
 
 ## **Item Tab / Panel**
 

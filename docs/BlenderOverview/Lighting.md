@@ -17,7 +17,8 @@ It uses a simple HDRI environment for the base lighting and 3 light objects (Are
     The Rendered display mode may slow down Blender considerably, depending on system hardware.
 
 
----
+!!! DIVIDER ""
+
 
 ## **Simple Scene Lighting**
 
@@ -68,7 +69,8 @@ It uses a simple HDRI environment for the base lighting and 3 light objects (Are
 </div>
 
 
----
+!!! DIVIDER ""
+
 
 ## **Duplicating Lights**
 
