@@ -13,7 +13,7 @@ SOPs for Creating 3D Renders with Blender
 - Use ***mkdocs build*** and copy contents of created ***site*** folder to server
 
 
-# ========================================================== #
+---
 
 
 # Links
@@ -31,7 +31,7 @@ https://expertphotography.com/composition-visual-weight-influence-viewers/
 https://expertphotography.com/20-tips-shallow-depth-of-field/
 
 
-# ========================================================== #
+---
 
 
 # Examples
@@ -205,7 +205,7 @@ World
 
 
 
-# ========================================================== #
+---
 
 
 # Future Additions
