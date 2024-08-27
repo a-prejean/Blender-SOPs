@@ -23,7 +23,7 @@ tags:
 
 - [Extra Lighting and Polish](#6-extra-lighting-and-polish)
 
-<!-- - [Rendering](#7-rendering) -->
+- [Rendering](#7-rendering)
 
 
 !!! DIVIDER ""
@@ -194,14 +194,18 @@ Add extra lights as needed.
 **placeReflection_blender**
 
 
-<!-- !!! DIVIDER ""
+!!! DIVIDER ""
 
 
 ## 7. ***Rendering***
 
 ---
 
-EEVEE? -->
+[**Render Settings**](../BlenderOverview/Render_Settings.html)
+
+[**Rendering Images**](../Rendering/Rendering.html)
+
+<!-- EEVEE? -->
 
 
 ---
