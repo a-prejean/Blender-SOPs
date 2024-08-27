@@ -13,6 +13,8 @@ SOPs for Creating 3D Renders with Blender
 - Use ***mkdocs build*** and copy contents of created ***site*** folder to server
 
 
+# ========================================================== #
+
 
 # Links
 https://chrisbrejon.com/cg-cinematography/
@@ -29,7 +31,6 @@ https://expertphotography.com/composition-visual-weight-influence-viewers/
 https://expertphotography.com/20-tips-shallow-depth-of-field/
 
 
-# ========================================================== #
 # ========================================================== #
 
 
@@ -98,11 +99,13 @@ https://squidfunk.github.io/mkdocs-material/customization/
 ==Highlighted==
 ***==Highlighted_Bold_Italic==***
 
+
 {==
 
 Highlighted_Text_Block
 
 ==}
+
 
 keyboard keys: ++ctrl+alt+del++
 
@@ -152,8 +155,8 @@ https://squidfunk.github.io/mkdocs-material/reference/images/
 Pages will show up in order listed in mkdocs.yml:
 
 nav:
-  - materials.md
   - index.md
+  - page.md
 
 
 
@@ -185,14 +188,8 @@ Some Text
 !!! DIVIDER ""
 
 
-# Find/Replace in Project
-Right + click
-Right-click
 
-Left + click
-Left-click
 
-(Tab)
 
 
 # Mentioning Appending Assets
@@ -208,8 +205,6 @@ World
 
 
 
-
-# ========================================================== #
 # ========================================================== #
 
 
