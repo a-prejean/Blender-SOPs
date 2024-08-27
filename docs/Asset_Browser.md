@@ -5,8 +5,13 @@ hide:
 
 # **Asset Browser**
 
-!!! note
-    Anything that can be reused across projects, such as Materials, Lighting Setups, Props, etc., can be marked as an Asset.
+
+{==
+
+Anything that can be reused across projects, such as Materials, Lighting Setups, Props, etc., can be marked as an Asset.
+
+==}
+
 
 ## **Setting up an Asset Library**
 
